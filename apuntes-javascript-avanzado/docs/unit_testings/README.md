@@ -438,27 +438,35 @@ Podemos llevar el testeo de nuestro proyecto un nivel mas y realizar los llamado
 
 Estos tests emulan el comportamiento del usuario final y testean el comportamiento final esperado (sin importar el codigo interno)
 
+[Example](https://coderwall.com/p/ricgfq/end-to-end-testing-with-casperjs)
+
 ```javascript
-  describe('angularjs homepage todo list', function() {
-    it('should add a todo', function() {
-      browser.get('https://angularjs.org');
+  casper.test.begin('Sign In Santa', 1, function(test){
+    casper.start('http://localhost:3000/');
 
-      element(by.model('todoList.todoText')).sendKeys('write first protractor test');
-      element(by.css('[value="add"]')).click();
+    casper.wait(500, function(){
+        this.fill('form#signInForm', {
+            'username' : 'santa',
+            'password' : 'xmas'
 
-      var todoList = element.all(by.repeater('todo in todoList.todos'));
-      expect(todoList.count()).toEqual(3);
-      expect(todoList.get(2).getText()).toEqual('write first protractor test');
-
-      // You wrote your first test, cross it off the list
-      todoList.get(2).element(by.css('input')).click();
-      var completedAmount = element.all(by.css('.done-true'));
-      expect(completedAmount.count()).toEqual(2);
+        }, false);
     });
-  });
+
+    casper.then(function(){
+        this.click(".signInBtn");
+    });
+
+    casper.wait(500, function(){
+        test.assertUrlMatch(this.getCurrentUrl(), 'http://localhost:3000/#user/santa');
+    });
+
+    casper.run(function(){
+        test.done();
+    });
+});
 ```
 
-Podemos escribir y lanzar estos con [Protractor](https://angular.github.io/protractor/#/)
+Una de las [librerias más populares](https://medium.com/@adrian_lewis/top-5-most-rated-node-js-frameworks-for-end-to-end-web-testing-f8ebca4e5d44) para hacer esto es [CasperJS](http://casperjs.org/). También se utilizan [Protractor](https://angular.github.io/protractor/#/) y [Nightwatch](http://nightwatchjs.org/)
 
 Otras herramientas para lanzar ests tipo de tests son [Selenium](http://www.seleniumhq.org/) y [WebDriver](http://www.seleniumhq.org/projects/webdriver/)
 
