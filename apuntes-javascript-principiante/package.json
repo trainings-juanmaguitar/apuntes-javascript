@@ -21,7 +21,7 @@
     "url": "https://github.com/trainings-juanmaguitar/apuntes-javascript-principiante/issues"
   },
   "homepage": "https://github.com/trainings-juanmaguitar/apuntes-javascript-principiante#readme",
-  "devDependencies": {
+  "dependencies": {
     "gitbook-cli": "^2.3.2"
   }
 }
