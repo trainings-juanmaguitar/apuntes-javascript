@@ -9,7 +9,7 @@
 * [Contexto ejecución](contexto_ejecucion/README.md)
 * [Scope](scope/README.md)
 * [Patrones de código](patrones_codigo/README.md)
-* [Patrones de diseño](patrones_diseño/README.md)
+* [Patrones de diseño](patrones_diseno/README.md)
 * [Unit Testings](unit_testings/README.md)    
 * [ES6](es6/README.md)    
   * [`=>` arrow Functions](es6/arrow-functions/README.md)    

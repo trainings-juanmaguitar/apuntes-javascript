@@ -63,7 +63,7 @@ true
 false
 ```
 
-  ![Encadenamiento de prototipos](https://raw.githubusercontent.com/juanmaguitar/apuntes-javascript-avanzado/master/markdown/herencia/img/1_toString-EncadenamientoPrototipos.png)
+![Encadenamiento de prototipos](./img/1_toString-EncadenamientoPrototipos.png)
   
   
 ```javascript
@@ -135,7 +135,7 @@ var myTriangle = new Triangle(5,10)
 
 ```
 
-  ![Moving shared methods](https://raw.githubusercontent.com/juanmaguitar/apuntes-javascript-avanzado/master/markdown/herencia/img/2_toString-MovingSharedMethodsToPrototype.png)
+  ![Moving shared methods](./img/2_toString-MovingSharedMethodsToPrototype.png)
 
 ```javascript
 >>> TwoDShape.prototype.hasOwnProperty("toString")
@@ -189,7 +189,7 @@ Triangle.prototype.getArea = function(){return this.side * this.height /
 2;}
 ```
 
-  ![Herencia solo del prototipo](https://raw.githubusercontent.com/juanmaguitar/apuntes-javascript-avanzado/master/markdown/herencia/img/3_toString-HerenciaSoloPrototipo.png)
+  ![Herencia solo del prototipo](./img/3_toString-HerenciaSoloPrototipo.png)
 
 ```javascript
 >>> Triangle.prototype.hasOwnProperty("getArea")
@@ -273,7 +273,7 @@ true
 true
 ```
 
-  ![Funcion Intermedia F()](https://raw.githubusercontent.com/juanmaguitar/apuntes-javascript-avanzado/master/markdown/herencia/img/4_toString-FuncionIntermediaF.png)
+  ![Funcion Intermedia F()](./img/4_toString-FuncionIntermediaF.png)
   
 ```javascript
 >>> myTriangle.__proto__.__proto__.__proto__.constructor === Shape
