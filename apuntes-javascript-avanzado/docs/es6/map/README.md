@@ -1,9 +1,9 @@
 # [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
-- New **data structure** for handling collections
-- Simple key/value map
-- Any value (both objects and primitive values) may be used as either a key or a value
-- Efficient and clean
+- Nueva **estructura de datos** para manejar colecciones
+- Sencillo mapa clave/valor
+- Cualquier valor (tanto objetos como primitivas) pueden ser usadas clave o valor
+- Limpio y eficiente
 
 ```javascript
 var m = new Map();
@@ -48,5 +48,3 @@ Hacer las siguientes katas:
 - [`map.set()`](http://tddbin.com/#?kata=es6/language/map/set)
 - [initalize](http://tddbin.com/#?kata=es6/language/map/initialize)
 - [`map.has()`](http://tddbin.com/#?kata=es6/language/map/has)
-
-!SLIDE es2015

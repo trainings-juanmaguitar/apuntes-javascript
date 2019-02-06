@@ -1,11 +1,11 @@
 # [Clases](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 - Basic support
-- `class` and [`extends`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) keywords
+- keywords `class` y [`extends`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) keywords
 - [`constructor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) definition
 - [`static`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static) method definitions
 
-BEFORE
+antes (ES5)
 
 ```javascript
 var Shape = function( id, x, y ) {
@@ -27,7 +27,7 @@ Rectangle.prototype.toString = function() {
 };
 ```
 
-AFTER
+después (ES2015)
 
 ```javascript
 class Shape {

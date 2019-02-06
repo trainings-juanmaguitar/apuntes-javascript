@@ -1,9 +1,9 @@
 # [Modules](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/)
 
-- Native modules, alternative to [CommonJS](http://www.commonjs.org/) and [AMD](http://requirejs.org/docs/whyamd.html)
-- Modules can export multiple values (unlike the others)
-- Statically analyzed to load dependencies
-- Dependencies are loaded asynchronously, but can be optimized with a module bundler ([rollup](http://rollupjs.org/) or [webpack](https://webpack.github.io/))
+- Módulos nativos, alternativa a [CommonJS](http://www.commonjs.org/) y [AMD](http://requirejs.org/docs/whyamd.html)
+- Módulos pueden exportar múltiples valores (no cómo los otros tipos de módulos)
+- Se analiza estáticamente para cargar dependencias
+- Las dependencias se cargan asíncronamente, pero se puede optimizar con un "module bundler" ([rollup](http://rollupjs.org/) or [webpack](https://webpack.github.io/))
 
 ```javascript
 // -------- jquery.js --------

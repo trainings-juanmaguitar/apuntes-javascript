@@ -57,7 +57,7 @@ Más info:
 - [Understanding ECMAScript 6 arrow functions](https://www.nczonline.net/blog/2013/09/10/understanding-ecmascript-6-arrow-functions/)
 
 
-##  **⛏ &nbsp; ES6 Katas: Arrow Functions**
+**⛏ &nbsp; ES6 Katas: Arrow Functions**
 
 Hacer las siguientes katas:
 - [basics](http://tddbin.com/#?kata=es6/language/arrow-functions/basics)
