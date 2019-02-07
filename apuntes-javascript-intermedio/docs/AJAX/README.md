@@ -11,7 +11,7 @@
 
     La aplicación de esta técnica dio lugar a las llamadas aplicaciones AJAX, donde no es necesario refrescar la pagina para obtener nuevo contenido.
 
-![AJAX](https://raw.github.com/juanmaguitar/training-frontend-docs/master/AJAX/img/ajax.png)
+![AJAX](./img/ajax.png)
 
 - AJAX son las siglas de **Asynchronous JavaScript + XML**:
     - _Asynchronous_ porque despues de hacer una peticion HTTP no necesita esperar a una respuesta, sino que puede seguir haciendo otras cosas y ser notificado cuando llegue la respuesta
